@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #f3d457;
+    overflow-x: hidden;
+    font-weight: 1000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.H1 h1 {
+    color: white;
+    font-weight: 900;
+    margin: 0;
+    margin-left: 3vw;
+    text-transform: uppercase;
+    letter-spacing: 2.5vw;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    color: white;
+    font-size: calc(1.5vh + 8px);
+    margin: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+h3:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    left: 0;
+    top: 50%;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.20s ease-out;
+}
+
+h3:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+p {
+    /* font-size: calc(.4vw + 12px); */
+    font-size: 15px;
+    margin: 20px;
+}
+
+button {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    color: black;
+}
+
+button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}

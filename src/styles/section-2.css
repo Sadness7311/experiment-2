@@ -1,0 +1,131 @@
+.second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    width: calc(100% - 20vw);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    overflow: hidden;
+    margin: 0;
+    /* background-image: url('/public/background.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* top: 100%; */
+    background-color: white;
+}
+
+.second-section h1 {
+    color: black;
+    margin: -10px;
+}
+.scroll {
+    transform: translateY(-100px);
+}
+
+.scroll p, .second-section h1:not(.scroll h1) {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.second-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* @media screen and (max-width: 768px) {
+} */
+
+.the-handler {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: white;
+    overflow: hidden;
+}
+
+.background-image {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 0;
+    height: 100%;
+
+}
+
+.desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(35vw + 100px);
+    height: calc(60vh + 200px);
+    margin: 30px;
+    margin-right: 4vw;
+}
+
+.desc h2 {
+    letter-spacing: .7vw;
+}
+
+
+.second-section h1 {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.second-section h1:after {
+    content: '';
+    position: absolute;
+    width: 20%;
+    transform: scaleY(0);
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: yellow;
+    transform-origin: bottom right;
+    transition: transform .2s ease-out;
+}
+
+.scroll h1{ cursor: text }
+
+.scroll h1:after {
+    width: 0;
+    height: 0;
+}
+
+.second-section h1:hover:after {
+    transform: scaleY(.5);
+    transform-origin: top left;
+}
+
+
+.sub-heading {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0;
+}
+
+.sub-heading h4 {
+    margin: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: calc(1.5vh + 8px);
+    color: black;  
+}
+
+.sub-heading p {
+    font-size: 14px;
+}
+
+.the-handler * { opacity: 0 }
