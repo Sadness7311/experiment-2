@@ -17,7 +17,7 @@ function App() {
       <SecondSection/>
       <ThirdSection/>
       </> : <>
-        <h4 style={{ color: 'white' }}>The site is currently not available for mobile phones.  -Sadness7311</h4>
+        <h4 style={{ color: 'white' }}>The site is currently not available for mobile phones.  -Umair</h4>
       </>}
     </>
   )
