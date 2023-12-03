@@ -96,7 +96,7 @@ experience: '3 months', expertise: '90%', url: 'https://greensock.com/gsap/'} },
         <div className="second-section">
             <div className="scroll">
                 <H1 text="Skills" styles={{ margin: '20px', letterSpacing: '5vw' }}/>
-                <p>Hello! I'm Sadness7311, an experienced web developer with a passion for creating dynamic and interactive websites. </p>
+                <p>Hello! I'm Umair, an experienced web developer with a passion for creating dynamic and interactive websites. </p>
                 <p>Over the past 5 months, I have dedicated my time to learning and mastering various libraries.</p>
                 <p style={{ fontWeight: 1000, margin: '10px' }}>I have learned these libraries: </p>
             </div>
